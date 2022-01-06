@@ -8,7 +8,8 @@ import Cards from './Components/Cards/Cards';
 import Login from './Components/Login/Login';
 import Cart from './Components/Cart/Cart';
 import SignUp from './Components/SignUp/SignUp';
-import Contact from './Components/Contact/Contact'
+import Contact from './Components/Contact/Contact';
+import UserProfile from './Components/Userprofile/UserProfile'
 function App() {
   return (
     <div >
@@ -22,6 +23,7 @@ function App() {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/Signup" element={<SignUp/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/profile" element={<UserProfile/>}/>
       </Switch>
       </BrowserRouter>
        

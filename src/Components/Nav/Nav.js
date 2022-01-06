@@ -14,7 +14,7 @@ function Nav() {
                         <ul className='mid-nav'> 
                         <Link to='/'>  <li>Home</li> </Link>
                         <Link to='/cards'> <li>Shop</li></Link>
-                        <li>UserProfile</li>
+                        <Link to='/profile'><li>UserProfile</li></Link>
                         <Link to='/contact'><li>Contact Us</li></Link>
                         
                         </ul>
