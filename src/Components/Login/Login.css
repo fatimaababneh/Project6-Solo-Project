@@ -1,0 +1,45 @@
+
+.container1 div{
+   
+    width: 100%;
+    height: 100%;
+}
+.form-styl{
+    display: flex;
+    justify-content: center;
+    margin:3em auto;
+    text-align: center;
+   
+}
+.containerlog{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:1em ;
+    border: white solid 1px;
+    /* border-radius: 5px; */
+    padding: 4em;
+    box-shadow: grey 2px 5px 20px 3px;
+    height: 45vh;
+    width: 30%;
+    
+    
+}
+.containerlog input{
+text-align: center;
+border-radius: 3px;
+height: 70%;
+
+color: black;
+}
+.containerlog button{
+    background-color: rgb(77, 79, 148);
+    border:rgb(77, 79, 148) solid 2px;
+    color: white;
+    border-radius: 3px;
+    height: 75%;
+    cursor: pointer;
+}
+
+.containerlog a{
+    color: rgb(108, 108, 214);
+}

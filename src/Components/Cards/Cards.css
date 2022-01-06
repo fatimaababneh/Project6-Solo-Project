@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+}
+.container-shop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    margin:3em auto;
+    gap:5em;
+}
+.each-card{
+border: solid white 1px;
+justify-content: center;
+text-align: center;
+height: auto;
+width: 15em;
+padding: .8em;
+box-shadow: grey 2px 5px 20px 3px;
+}
+.each-card img{
+    width:10em;
+    height: 10em;
+
+}
