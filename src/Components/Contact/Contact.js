@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Popup from "./Popup";
 import './Contact.css'
-
+import 'animate.css';
 function Contact() {
 
   const [submitted, setSubmitted] = useState(false);
@@ -16,15 +16,15 @@ function Contact() {
 //     const { id, value } = e.target;
 //   };
 
-  let lcl = JSON.parse(localStorage.getItem("reservations"));
+  let reservation = JSON.parse(localStorage.getItem("reservations"));
   let found;
   let starting;
   let indx;
 
-//   for (let i in lcl)
-//     if (lcl[i].id == id) {
+//   for (let i in reservation)
+//     if (reservation[i].id == id) {
 //       indx = i;
-//       let starting1 = new Date(lcl[i].start)
+//       let starting1 = new Date(reservation[i].start)
 //       let mid = starting1.getDate();
 //       starting1.setDate(mid + 1);
 //       let start = starting1.toISOString();
@@ -37,7 +37,7 @@ function Contact() {
   const valueCut1 = start.substring(0, 10);
   const [valueCut, setValueCut] = useState(found ? starting : valueCut1);
 
-  let minHour = found ? lcl[indx].hour : `${(today.getHours()+2).toString()}:00`
+  let minHour = found ? reservation[indx].hour : `${(today.getHours()+4).toString()}:00`
 
   const handleDateChange = (e) => {
     setValueCut(e.target.value);
@@ -74,17 +74,17 @@ function Contact() {
                 name="fName"
                 id="fName"
               />
-              <input
+              {/* <input
             
                 required
                 placeholder="Last Name"
                 type="text"
                 name="lName"
                 id="lName"
-              />
+              /> */}
             </div>
             <div className="texts" id="texts2">
-              <input
+              {/* <input
                 required
                 placeholder="Email"
                 onChange={() => {
@@ -93,7 +93,7 @@ function Contact() {
                 type="email"
                 name="email"
                 id="email"
-              />
+              /> */}
               <input
                 type="tel"
                 pattern="[0-9]{10}"
@@ -122,7 +122,7 @@ function Contact() {
         {found && (
           <>
             <h2 className="register-label">
-              You already have a reservation on {lcl[indx].start} at {lcl[indx].hour}
+              You already have a reservation on {reservation[indx].start} at {reservation[indx].hour}
             </h2>
           </>
         )}

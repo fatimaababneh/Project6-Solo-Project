@@ -6,8 +6,9 @@ function UserProfile(props) {
     let [edit, setEdit] = useState(false)
     let info = useRef(null);
     let editing = useRef(null);
-
+    
     useEffect(() => {
+
     if(edit)
       {editing.current.style.display ="flex"
       info.current.style.display ="none"}
@@ -15,15 +16,15 @@ function UserProfile(props) {
         editing.current.style.display ="none"
         info.current.style.display ="flex"
       }
-    }, [edit])
-
+    })
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     const handleChange = (e)=>{
         const { name, value } = e.target;
         setUser({...user,[name]:value})
 
     }
-
-    const handleData =(e)=>{
+ 
+    const handleData =(e)=>{                                                         
         let index = user.index;
         let lcl = JSON.parse(localStorage.getItem('allusers'));
         lcl[index] = user;
@@ -36,7 +37,6 @@ function UserProfile(props) {
     }
     return (
         <>
-        {props.children}
         <div className='profileContainer'>
             <div ref={info} className='infoUser'>
                 <p><span>User Name: </span><span>{user.username}</span></p>

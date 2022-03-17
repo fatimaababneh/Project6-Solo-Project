@@ -35,3 +35,10 @@ box-shadow: grey 2px 5px 20px 3px;
     height: 10em;
 
 }
+@media only screen and (max-width:1000px){
+    .container-card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+}

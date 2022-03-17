@@ -12,10 +12,14 @@ function Hero() {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
+          
         >
+          
+          
           <div className="content">
-              
+          <h1 id="animate" class="animate__animated animate__bounce">Care about your baby</h1>
           </div>
+          
         </div>
       </div>
     </div>

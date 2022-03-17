@@ -7,10 +7,10 @@ function Cards() {
     const itemadded =[];
 
     const card=[{ id:'1',title:"bag",urll:'https://cf.shopee.ph/file/76a2d7ba8e51700f995a4a185c0774be',description:'for girl',price:40},
-        {id:'2',title:'bag',urll:"https://cf.shopee.ph/file/76a2d7ba8e51700f995a4a185c0774be",description:'gor boy',price:23},
+        {id:'2',title:'bag',urll:"https://image.shutterstock.com/image-photo/baby-girl-playing-educational-toy-260nw-372315763.jpg",description:'gor boy',price:23},
         {id:'3',title:'toy',urll:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2017%2F10%2F12232106%2Ficecreamcart-315.jpg" , description:'for babies between 2 and 3',price:42}
-        ,{ id:'4',title:"bag",urll:'https://cf.shopee.ph/file/76a2d7ba8e51700f995a4a185c0774be',description:'for girl',price:30},
-        {id:'5',title:"bag",urll:"https://cf.shopee.ph/file/76a2d7ba8e51700f995a4a185c0774be",description:'gor boy',price:32},
+        ,{ id:'4',title:"bag",urll:'https://m.media-amazon.com/images/I/81EXAeHAhhL._AC_SL1500_.jpg',description:'for girl',price:30},
+        {id:'5',title:"bag",urll:"https://5.imimg.com/data5/NU/SM/MY-37146404/baby-toys-1-500x500.jpg",description:'gor boy',price:32},
         {id:'6',title:'toy',urll:"https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2017%2F10%2F12232106%2Ficecreamcart-315.jpg" , description:'for babies between 2 and 3',price:24}]
         
 
@@ -33,10 +33,6 @@ function Cards() {
                     localStorage.setItem("cartitems",JSON.stringify(cartitems));
                 }
 
-              
-                
-
-            
         }
 
         return (

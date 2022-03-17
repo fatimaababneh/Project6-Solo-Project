@@ -16,8 +16,8 @@ function Cart() {
 
                 }
             }
-
         }
+        
         const addtototalprice=()=>{
 
         }
